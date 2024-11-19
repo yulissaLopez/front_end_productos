@@ -1,0 +1,89 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f3f0; /* Beige suave */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #4a4a4a; /* Gris oscuro */
+}
+
+form {
+  background-color: #ffffff; /* Blanco */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #e0e0e0; /* Gris claro */
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #4a4a4a; /* Gris oscuro */
+  font-size: 1.8rem;
+  text-align: center;
+  border-bottom: 2px solid #d3bdae; /* Beige más oscuro */
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #4a4a4a; /* Gris oscuro */
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #dcdcdc; /* Gris claro */
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #fafafa; /* Blanco suave */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #d3bdae; /* Beige */
+  outline: none;
+  box-shadow: 0 0 5px rgba(211, 189, 174, 0.5); /* Beige */
+}
+
+button {
+  background-color: #d3bdae; /* Beige oscuro */
+  color: #ffffff; /* Blanco */
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #c4a98d; /* Beige más intenso */
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  form {
+      padding: 1.5rem;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  input, button {
+      font-size: 0.9rem;
+  }
+}
